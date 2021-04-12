@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF_UsingCamera_Sqlite.MainPage">
+
+    <StackLayout>
+        <Entry Placeholder="Username" x:Name="Username" FontSize="25" BackgroundColor="Azure" />
+        
+        <Button Text="Take a Photo" BackgroundColor="Maroon" TextColor="White" 
+                FontSize="30" Clicked="TakePhotoButton_OnClicked" />
+        
+        <Button Text="Pick a Photo" BackgroundColor="Maroon" TextColor="White" 
+                FontSize="30" Clicked="PickPhotoButton_OnClicked" />
+        
+        <Button Text="Take a Video" BackgroundColor="Maroon" TextColor="White" 
+                FontSize="30" Clicked="TakeVideoButton_OnClicked" />
+
+        <Button Text="Pick a Video" BackgroundColor="Maroon" TextColor="White" 
+                FontSize="30" Clicked="PickVideoButton_OnClicked" />
+        
+        <Image x:Name="MainImage" />
+        <Label x:Name="PathLabel" FontSize="14" TextColor="Black" />
+
+        <Button Text="Create an Account" x:Name="CreateAccount" Clicked="CreateAccount_Clicked" FontSize="25" 
+                    HorizontalOptions="Center" FontAttributes="Bold" BackgroundColor="DarkSeaGreen"/>
+    </StackLayout>
+
+</ContentPage>
